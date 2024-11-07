@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.form{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+form{
+    max-width: 340px;
+    min-width: 340px;
+}
+
+.form__encabezado{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+    color:rgb(207, 207, 207);
+}
+
+.form__item{
+    display: block;
+    margin: 20px auto;
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: rgb(53, 53, 53);
+
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+    border: none;
+    box-shadow: inset 4px 4px 10px rgba(146, 146, 146, 0.43),  inset -5px -5px 10px rgb(254, 254, 254);
+}
+
+.form__segundo{
+    display: flex;
+    justify-content: center;
+}
+
+.form__botones{
+    display: flex;
+    justify-content: center;
+}
+
+.form__segundo{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__botones{
+    margin: 20px 0px;
+}
+
+.item__boton{
+    color: red;
+    font-weight: 500;
+    height: 50px;
+    position: relative;
+    box-shadow: 5px 5px 20px rgba(146, 146, 146, 0.523);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.item__boton:hover{
+    background-color: rgb(133, 0, 0);
+    color: aliceblue;
+    font-weight: 900;
+    box-shadow: inset 4px 4px 10px rgb(104, 0, 0),  inset -5px -5px 10px rgb(168, 0, 0);
+}
+
+.form__segundo__item{
+    width: 80%;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: rgb(53, 53, 53);
+
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px;
+    border: none;
+    box-shadow: inset 4px 4px 10px rgba(146, 146, 146, 0.43),  inset -5px -5px 10px rgb(254, 254, 254);
+}
+
+.botones{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 5px;
+    color: rgb(98, 98, 98);
+    box-shadow: 5px 5px 20px rgb(146, 146, 146);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.botones:hover{
+    background-color: rgb(133, 0, 0);
+    color: white;
+    border-radius: 100px;
+}
+
+.boton{
+    margin: 10px 10px;
+}
+
+::placeholder{
+    color: rgb(146, 146, 146);
+    padding: 10px;
+}
+
+.span{
+    position: absolute;
+    bottom: 13px;
+    left: 120px;
+}

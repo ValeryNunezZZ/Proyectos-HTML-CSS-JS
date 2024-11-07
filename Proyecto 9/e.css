@@ -1,0 +1,153 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(238, 238, 238);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(234, 234, 234);
+}
+
+.card, .card__item, .down__size, .down__color, .size__item, .appear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appear{
+    position: absolute;
+    bottom: -130px;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.5s;
+}
+
+.card:hover .appear{
+    position: relative;
+    position: none;
+    bottom: 0;
+}
+
+.card:hover .circle{
+    transform: scale(0.8);
+}
+
+.item__up{
+    position: relative;
+    transition: all 0.5s;
+}
+
+.circle{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(41, 214, 119);
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    transition: all 0.5s;
+}
+
+.card{
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgb(26, 26, 26);
+    gap: 30px;
+    padding: 40px 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 50px rgb(75, 75, 75);
+    transition: all 0.5s;
+}
+
+.card:hover{
+    transform: perspective(400px) translateZ(30px);
+}
+
+.card__item{
+    flex-direction: column;
+}
+
+.item__down{
+    gap: 12px;
+    transition: all 0.5s;
+}
+
+.down__size{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.size__item{
+    background-color: beige;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.down__color{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.color__item{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.item__red{
+    background-color: rgb(255, 94, 94);
+}
+
+.item__green{
+    background-color: rgb(51, 179, 81);
+}
+.item__blue{
+    background-color: rgb(61, 106, 255);
+}
+
+img{
+    position: relative;
+    width: 100%;
+}
+
+.tennis{
+    transition: all 0.5s;
+}
+
+.card:hover .tennis{
+    transform: perspective(600px) translateZ(80px) rotate(10deg);
+}
+
+.down__button{
+    color:black;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+.logo{
+    position: absolute;
+    width: 90%;
+    top: 220px;
+    opacity: 0.5;
+}
+
+h1{
+    position: relative;
+    z-index: 100;
+}

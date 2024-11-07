@@ -1,0 +1,139 @@
+body{
+    margin: 0%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.container, .all{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(21, 21, 21);
+}
+
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    border: 5px solid blue;
+    border-left: 0;
+    border-right: 0;
+    filter:saturate(4)
+
+}
+
+.all{
+    width: 100%;
+    height: 200px;
+    border: 5px solid blue;
+    border-left: 0;
+    border-right: 0;
+    filter: contrast(6);
+}
+
+.pac-man{
+    width: 100px;
+    height: 100px;
+    stroke: rgb(240, 216, 0);
+    fill: transparent;
+    stroke-width: 1.5px;
+    stroke-dasharray: 314;
+    stroke-width: 100px;
+    border-radius: 50%;
+    stroke-dashoffset: 0;
+    
+
+    animation: open-mouth 1s ease-in-out infinite;
+}
+
+@keyframes open-mouth {
+    0%{
+        stroke-dashoffset: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        stroke-dashoffset: 85;
+        transform: rotate(50deg);
+    }
+    100% {
+        stroke-dashoffset: 0;
+        transform: rotate(0deg);
+    }
+
+}
+
+.eye{
+    position: absolute;
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 50%;
+    z-index: 10;
+
+    top:0;
+    left: 10px;
+    bottom: 50px;
+    right: 0;
+
+    animation: eye 1s ease-in-out infinite;
+}
+
+@keyframes eye {
+    0%{
+        bottom: 50px;
+        left: 10px;
+    }
+    50% {
+        bottom: 60px;
+        left: -5px;
+    }
+    100% {
+        bottom: 50px;
+        left: 10px;
+    }
+}
+
+.food{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(240, 216, 0);
+    border-radius: 50%;
+    margin: auto;
+
+    top:0;
+    bottom: 0px;
+    right: 0px;
+}
+
+.food-1{
+    animation: comida-1 2s linear 0s infinite;
+}
+
+.food-2{
+    animation: comida-1 2s linear 0.5s infinite;
+}
+
+.food-3{
+    animation: comida-1 2s linear 1s infinite;
+}
+
+.food-4{
+    animation: comida-1 2s linear 1.5s infinite;
+}
+
+@keyframes comida-1 {
+	0% {
+		right: 0px;
+	}
+	100% {
+		right: 50%;
+	}
+}

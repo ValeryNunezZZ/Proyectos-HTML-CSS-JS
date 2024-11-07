@@ -1,0 +1,68 @@
+form{
+    max-width: 340px;
+    min-width: 340px;
+    margin: auto;
+    margin-top: 160px;
+    box-shadow: 4px 2px 10px rgba(175, 175, 175, 0.452);
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo{
+    width: 120px;
+    box-shadow: 4px 2px 10px rgba(175, 175, 175, 0.452);
+    height: 120px;
+    margin: auto;
+    border-radius:60px;
+    background-image: url("./logo.png");
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: 17px 25px;
+}
+
+h1{
+    color: #00b9fc;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.boton, .campos{
+    width: 100%;
+    margin-top: 20px;
+}
+
+input{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    box-shadow: inset 4px 4px 10px rgba(175, 175, 175, 0.137);
+}
+
+label{
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    color: #2f2f2f;
+}
+
+.etiqueta{
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #00b9fc;
+    font-size: 15px;
+}
+

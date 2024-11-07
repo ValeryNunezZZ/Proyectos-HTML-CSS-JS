@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    height: 100vh;
+    width: 100;
+    background: url(./font.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+}
+
+h1{
+    color: white;
+    text-wrap: balance;
+
+}
+
+p{
+    color: white;
+    margin-top: 20px;
+    text-wrap: pretty;
+}
+
+.header__overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.435);
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.header__img{
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    text-align: center;
+}
+
+.nav{
+    position: sticky;
+    margin-bottom: 70px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.nav__ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__img{
+    width: 140px;
+}
+
+.ul__li{
+    display: inline-block;
+    color: white;
+    list-style: none;
+    margin: 10px;
+}
+
+.img{
+    width: 100%;
+}
+
+.dalto{
+    max-width: 50%;
+    min-width: 200px;
+    height: 200px;
+    border: 2px solid rgba(255, 241, 235, 0.6);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.boton{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main{
+    margin-top: 200px;
+    max-width: 500px;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+}

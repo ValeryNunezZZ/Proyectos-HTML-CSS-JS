@@ -1,0 +1,246 @@
+
+.frame{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(28, 28, 28);
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.center{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #57d5ff; 
+    border-radius: 50%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: sky 6s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+.p-left{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top:0;
+    bottom: 20px;
+    left: 0;
+    right:35px;
+    margin: auto;
+    background-color: rgb(255, 255, 204);
+    clip-path: polygon(70% 30%, 0% 100%, 60% 100%);
+    animation: pyramid 6s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+.p-right{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top:0;
+    bottom: 20px;
+    left: 86px;
+    right: 0;
+    margin: auto;
+    background-color: rgb(154, 154, 95);
+    clip-path: polygon(10% 30%, 0% 100%, 80% 100%);
+    animation: pyramid2 6s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+.sand{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top:180px;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    background-color: rgb(103, 72, 0);
+    animation: sand 6s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+.limite{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    clip-path: circle(50%);
+}
+
+.sun{
+    position: absolute;
+    width:40px;
+    height: 40px;
+    clip-path: circle(50%);
+    background: radial-gradient(rgb(255, 102, 0), yellow);
+    top:0;
+    bottom: 150px;
+    left: 0;
+    right: 0px;    
+    z-index: 300;
+    margin: auto;
+    transform-origin: 40% 400%;
+    animation: sun-goes-down 6s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+.shadow{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(127, 127, 127);
+    z-index: 200;
+    clip-path: polygon(100% 80%,16% 70%, 86.5% 70%);
+    animation: shadow 6s cubic-bezier(.4,0,.49,1) infinite;
+}
+
+@keyframes shadow {
+    0% {
+        background: #614900;
+        clip-path: polygon(100% 80%,16% 70%, 86.5% 70%);
+    }
+    
+    30% {
+        background: #614900;
+        clip-path: polygon(80% 90%,16% 70%, 86.5% 70%);
+    }
+
+    70% {
+        background: #312500;
+        clip-path: polygon(0% 100%,16% 70%, 86.5% 70%);
+    }
+
+    100% {
+        background: #000000;
+        clip-path: polygon(0% 70%,16% 70%, 86.5% 70%);
+    }
+}
+
+@keyframes sun-goes-down {
+    0% {
+        background: #F57209;
+        transform: rotate(-70deg);
+    }
+    
+    30% {
+        background: #FFEF00;
+        transform: rotate(-28deg);
+    }
+
+    70% {
+        background: #FFEF00;
+    }
+
+    100% {
+        background: #F57209;
+        transform: rotate(70deg);
+    }
+}
+
+
+@keyframes pyramid{
+    0% {
+        background: rgb(255, 255, 204);
+    }
+    
+    30% {
+        background: rgb(255, 251, 188);
+    }
+
+    70% {
+        background: rgb(154, 154, 95);
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes pyramid2{
+    0% {
+        background: rgb(154, 154, 95);
+    }
+    
+    30% {
+        background: rgb(156, 152, 93);
+    }
+
+    70% {
+        background: rgb(255, 255, 204);
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes sky{
+    0% {
+        background: #57d5ff;    
+    }
+    
+    30% {
+        background: #4eafff;
+    }
+
+    70% {
+        background: #3d43ff;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@keyframes sand{
+    0% {
+        background: rgb(103, 72, 0);    
+    }
+    
+    30% {
+        background: rgb(126, 88, 0);
+    }
+
+    70% {
+        background: rgb(73, 51, 0);
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+/*
+.star{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    left: 10;
+    right: 0;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    margin: auto;
+}
+
+
+Cecilia o Edgardo ADA
+
+Rafael (aburrido y un poco barco) Paradigmas
+Miguel Angel (Falta mucho y barco) Paradigmas
+Parra (muy barco) Pardigmas
+
+Flores Eduardo Finanzas
+
+René o Figueroa (circuitos)
+*/

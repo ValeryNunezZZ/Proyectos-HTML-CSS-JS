@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./etilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <h1>Formulario</h1>
+
+        <fieldset>
+            <legend>Datos peronales</legend>
+            <div class="etiquetas">
+                <label>Nombre Completo</label>
+            </div>
+            <div class="campos">
+                <input class="entradas" placeholder="Valery Núñez" type="text">
+            </div>
+
+            <div class="etiquetas">
+                <label>Edad</label>
+            </div>
+            <div class="campos">
+                <select class="entradas" name="edad">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                </select>
+            </div>
+
+            <div class="etiquetas">
+                <label>Correo Electrónico</label>
+            </div>
+            <div class="campos">
+                <input class="entradas" placeholder="ejemplo@gmail.com" type="email">
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos domiciliarios</legend>
+            <div class="etiquetas">
+                <label>Domicilio</label>
+            </div>
+            <div class="campos">
+                <input class="entradas" placeholder="Col. Linda Vista calle Municipio" type="text">
+            </div>
+            
+
+            <div class="etiquetas">  
+                <label>Código Postal</label>
+            </div>
+            <div class="campos">
+            <input class="entradas" placeholder="432424" type="number">
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos de referencia</legend>
+            <div class="campos">
+            <textarea class="entradas" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+
+</body>
+</html>

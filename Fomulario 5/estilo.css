@@ -1,0 +1,87 @@
+body{
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    padding: auto;
+    padding: 10% 150px;
+}
+
+#formulario{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: sans-serif;
+}
+
+#imagen, #formulario{
+    display:table-cell;
+    padding: 4%;
+}
+
+h1{
+    color: rgb(120, 0, 205);
+    font-size: 25px;
+    margin-top: 20%;
+}
+
+h2{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(156, 156, 156);
+    margin-bottom: 20px;
+}
+
+.entradas{
+    text-align: center;
+    width: 100%;
+    margin: none;
+    padding: none;
+    border: none;
+}
+.enlace{
+    width: 100%;
+    margin: none;
+    padding: none;
+    border: none;
+    margin-top: 30px;
+}
+
+input{
+    width: 70%;
+    margin-top: 15px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.enlace, .boton{
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    width: 70%;
+    background: linear-gradient(to right, rgb(255, 82, 220), rgb(170, 2, 208), rgb(71, 129, 255));
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+#imagen{
+    width: 60%;
+    background-image: url("./background.JPG");
+    height: 450px;
+    background-size: cover;
+    background-position: right;
+    border: none;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+    text-decoration:underline;
+    font-size: 12px;
+    text-align: right;
+}

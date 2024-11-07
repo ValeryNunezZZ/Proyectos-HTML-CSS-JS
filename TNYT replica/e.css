@@ -1,0 +1,296 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid;
+    text-align: center;
+    background-color: white;
+}
+
+.header__item{
+    display: inline-block;
+    padding: 15px 4px;
+    color: black;
+}
+
+.formulario{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario__imgs{
+    width: 50%;
+}
+
+.formulario__imgs img, .news__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.formulario__subscripcion{
+    width: 50%;
+}
+
+.news{
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 5%;
+}
+
+.news__h{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 40px 0px;
+}
+
+.news__img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    box-sizing: border-box;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.footer li{
+    list-style: none;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+.footer p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+h4{
+    font-weight: 900;
+}
+
+.top__left{
+    width: 60%;
+}
+
+.footer__bottom p{
+    font-family: sans-serif;
+    display: inline-block;
+    color: rgb(147, 147, 147);
+    font-weight: 100;
+}
+
+.footer__bottom a{
+    margin: 0px 5px;
+    color: white;
+}
+
+.container__middle__right{
+    display: flex;
+    flex-direction: row;
+}
+
+.top__middle{
+    width: 50%;
+}
+
+.top__right{
+    width: 50%;
+}
+
+
+/*FORMULARIO*/
+
+.formulario__subscripcion{
+    box-sizing: border-box;
+    padding: 150px;
+}
+
+.p1{
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.p2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 10px 0px;
+    color: rgb(19, 19, 19);
+    font-weight: 100;
+}
+
+.fomulario__logo img{
+    width: 40%;
+}
+
+.costos{
+    display: flex;
+    flex-direction: column;
+}
+
+.costos__primero, .costos__segundo{
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.formulario button, .ofertas__a{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+
+/*OFERTAS*/
+
+.ofertas{
+    padding: 5%;
+}
+
+.ofertas p{
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+.ofertas h3{
+    text-transform: uppercase;
+}
+
+.ofertas__a{
+    text-transform: uppercase;
+    width: 200px;
+    margin: 30px 0px;
+}
+
+/*FORMULARIO*/
+
+.costos__primero, .costos__segundo{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.tachado{
+    color: rgb(79, 79 , 79);
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.no-tachado{
+    display: inline-block;
+}
+
+.p__abajo{
+    color: rgb(79, 79, 79);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+span{
+    border: 2px solid;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+input{
+    width: 20px;
+    height: 20px;
+}
+
+.f-p, .s-p{
+    border-top: 1px solid;
+    display: block;
+    padding: 15px 0px;
+    font-weight: 100;
+    font-size: 13px;
+    color: rgb(35, 35, 35);
+}
+
+.cancel{
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .formulario{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario__subscripcion{
+        padding: 10% 25%;
+    }
+
+    .formulario__subscripcion, .formulario__imgs{
+        width: 100%;
+    }
+
+    .top__left, .container__middle__right{
+        width: 100%;
+    }
+
+    .container__middle__right{
+        padding-top: 5%;
+    }
+
+    .footer__top{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .formulario__subscripcion{
+        padding: 10% 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .formulario__subscripcion{
+        padding: 10% 5%;
+    }
+}

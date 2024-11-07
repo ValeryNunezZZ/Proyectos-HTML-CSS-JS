@@ -1,0 +1,111 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 0, 95);
+}
+
+.card{
+    width: 350px;
+    padding: 5%;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0px 0px 20px white;
+}
+
+.personaje{
+    display: flex;
+    gap: 15px;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(114, 0, 146, 0.381);
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+}
+
+h1{
+    font-size: 29px;
+    margin-bottom: 40px;
+    position: relative;
+    color: rgba(245, 245, 245, 0.718);
+    z-index: 20;
+}
+
+
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img{
+    width: 20%;
+    grid-area: img;
+    border-radius: 20px;
+}
+
+h2{
+    grid-area: name;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+p{
+    grid-area: description;
+    font-size: 16px;
+}
+
+.personaje:hover{
+    transform: perspective(250px) translateX(-20px) translateZ(60px);
+    background-color: rgb(43, 0, 43);
+    color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.443);
+}
+
+
+.place{
+    background-color: white;
+    font-weight: 900;
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(89, 3, 103);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotateZ(80deg) translateY(-80px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.personaje:hover .place{
+    opacity: 1;
+    transform: rotateZ(20deg) translateY(2px);
+}
+
+.num{
+    transition: all 0.6s;
+}
+
+.personaje:hover .num{
+    transform: perspective(200px) translateZ(45px);
+    text-shadow: 4px 4px 5px rgb(162, 162, 162);
+}

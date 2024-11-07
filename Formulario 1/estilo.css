@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(230, 221, 231);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.fondo{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 2000px;
+    z-index: 0;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(to right, rgba(255, 145, 231, 0.456),  rgba(255, 55, 155, 0.406),  #fba22e8a, #fff06590);
+}
+
+.contenedor{
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__container{
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    min-width: 500px;
+    max-width: 500px;
+    height: 390px;    
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 20px #2222224f;
+}
+
+.close{
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: #373737;
+    box-shadow: -8px 8px 30px rgba(56, 56, 56, 0.318);
+    border-radius: 50px;
+}
+
+.form__img{
+    width: 45%;
+    height: 90%;
+    background: url(./img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -150px;
+}
+
+.form__content{
+    width: 45%;
+}
+
+.content__item{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.item__entrada{
+    height: 40px;
+    font-size: 15px;
+    font-weight: 200;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid rgba(165, 165, 165, 0.533);
+    border-radius: 3px;
+}
+
+.item__boton{
+    height: 40px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right, rgb(145, 167, 255),  rgb(112, 140, 255),  #2b55ff);
+    box-shadow: 0px 0px 5px #2b55ff;
+}
+
+.item__encabezado{
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.item__parrafo{
+    width: 90%;
+    font-size: 15px;
+}
+
+.item__parrafo-menor{
+    text-align: center;
+    color: #bababb;
+    font-size: 13px;
+}
