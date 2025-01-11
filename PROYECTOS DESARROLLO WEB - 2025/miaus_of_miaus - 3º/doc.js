@@ -1,6 +1,5 @@
-//PARTIDAS DE SÓLO NUMEROS IMPARES
-//SELECCION FORZOZA DE JUGADOR
 
+//SELECCION FORZOZA DE JUGADOR (VALIDACIÓN)
 //PONER QUÉ JUGADOR ES CUAL DENTRO DE LA RONDA
 
 
@@ -39,6 +38,7 @@ const body = document.querySelector(".body");
 const restart = document.querySelector(".restart");
 const modal_ganador = document.querySelector(".modal_ganador");
 const empate = document.querySelector(".empate");
+const empate_final = document.querySelector(".empate_final");
 
 
 const cr1 = document.querySelector(".cruz_1")
@@ -151,16 +151,13 @@ function nuevaPartida(){
 
 function nuevaRonda(){
 
-    numPartidas--;
-    
-
     if(numPartidas == 0){
-
-        modal_ganador.classList.remove("modal_ganador_desaparecer");
         
         var ganador;
 
         if(gana_x > gana_o){
+
+            modal_ganador.classList.remove("modal_ganador_desaparecer");
 
             if(!playerOne){
                 ganador = "jugador 1"
@@ -168,8 +165,11 @@ function nuevaRonda(){
                 ganador = "jugador 2"
             }
 
-            modal_ganador.innerHTML = `<div class='settings modal_gana'><h3>GANA</h3><span>${ganador}</span><div class='cruz cruz_2'>X</div><input class='restart' onclick='nuevaPartida()' type='submit' value='Restart'></div>`
-        }else{
+            modal_ganador.innerHTML = `<div class='settings modal_gana'><h3>GANA</h3><span>${ganador}</span><div class='cruz cruz_2'>X</div><input class='restart' onclick='nuevaPartida()' type='submit' value='Restart'></div>`;
+
+        }else if(gana_x < gana_o){
+
+            modal_ganador.classList.remove("modal_ganador_desaparecer");
 
             if(playerOne){
                 ganador = "jugador 1"
@@ -178,6 +178,12 @@ function nuevaRonda(){
             }
 
             modal_ganador.innerHTML = `<div class='modal'><div class='settings modal_gana'><h3>GANA</h3><span>${ganador}</span><div class='cir cir_2'>O</div><input class='restart' onclick='nuevaPartida()' type='submit' value='Restart'></div></div>`
+
+        }else{
+
+            empate_final.classList.remove("modal_ganador_desaparecer");
+
+            empate_final.innerHTML = `<div class="empate_container_final"><h2>Nadie gana</h2><div><img src="./IMG/tie_cat.webp"><input class='restart' onclick='nuevaPartida()' type='submit' value='Restart'></div></div>`
         }
 
 
@@ -196,6 +202,8 @@ const revisar = () =>{
     //se pueder mejorar con un for
 
     if(revisarX()){
+
+        numPartidas--;
         
         gana_x++;
         equis.innerHTML = gana_x;
@@ -203,25 +211,36 @@ const revisar = () =>{
 
     }else if(revisarO()){
 
+        numPartidas--;
+
         gana_o++;
         circuilo.innerHTML = gana_o;
         nuevaRonda();
 
     }else if(count == 9 && !revisarO() && !revisarX()){
 
-        empate.classList.remove("modal_ganador_desaparecer");
+        numPartidas--;
 
-        empate.style.animation = "aparecer_desaparecer_empate 5s ease";
+        alert(numPartidas)
 
-        empate.innerHTML = '<div class="empate_container"><h2>Empate</h2><div><img src="./IMG/cat.webp"></div></div>'
-
-        setTimeout(()=>{
-            empate.classList.add("modal_ganador_desaparecer");
+        if(numPartidas == 0){
             nuevaRonda();
-        },4000);
+        }else{
+            empate.classList.remove("modal_ganador_desaparecer");
+
+            empate.style.animation = "aparecer_desaparecer_empate 5s ease";
+    
+            empate.innerHTML = '<div class="empate_container"><h2>Empate</h2><div><img src="./IMG/cat.webp"></div></div>'
+    
+            setTimeout(()=>{
+                empate.classList.add("modal_ganador_desaparecer");
+                nuevaRonda();
+            },4000);
+        }
         
     }
 }
+
 
 
 function revisarX(){
