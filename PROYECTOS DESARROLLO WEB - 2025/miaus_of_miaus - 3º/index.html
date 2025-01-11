@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <title>Document</title>
+</head>
+<body class="body">
+
+
+    <div class="empate modal_ganador_desaparecer">
+
+    </div>
+
+
+
+    <div class="modal_ganador modal_ganador_desaparecer">
+
+    </div>
+
+    <div class="modal">
+        <div class="settings">
+            <div class="mensaje_container"></div>
+            
+            <h2>Settings</h2>
+
+            <div class="jugadores">
+                <div class="jugador_1">
+                    <span>Player One</span>
+                    <div class="symbol">
+                        <div class="cruz cruz_1">X</div>
+                        <div class="cir cir_1">O</div>
+                    </div>
+                </div>
+    
+                <div class="jugador_2">
+                    <span>Player Two</span>
+                    <div class="symbol">
+                        <div class="cruz cruz_2">X</div>
+                        <div class="cir cir_2">O</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partidas">
+                <span>Número de partidas</span>
+                <input class="par" type="number">
+            </div>
+            <input class="start" type="submit" value="Start Game">
+        </div>
+    </div>
+
+
+    <div class="container_all">
+        <div class="title">
+            <h1>Ronda <span class="num">1</span></h1>
+            <div class="symbol">
+                <div>
+                    <div class="cruz cruz_2">X</div>
+                    <div><span class="gana_x">0</span> ganadas</div>
+                </div>
+    
+                <div>
+                    <div class="cir cir_2">O</div>
+                    <div><span class="gana_o">0</span> ganadas</div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="track-container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+    </div>
+
+    <script src="./doc.js"></script>
+</body>
+</html>
